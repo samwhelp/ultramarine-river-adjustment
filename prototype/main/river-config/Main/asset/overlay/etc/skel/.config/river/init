@@ -163,15 +163,47 @@ riverctl map normal Super F toggle-fullscreen
 
 
 
+################################################################################
+### Head: Keybind / Window / Focus
+##
 
-# Super+J and Super+K to focus the next/previous view in the layout stack
-riverctl map normal Super J focus-view next
-riverctl map normal Super K focus-view previous
 
-# Super+Shift+J and Super+Shift+K to swap the focused view with the next/previous
-# view in the layout stack
-riverctl map normal Super+Shift J swap next
-riverctl map normal Super+Shift K swap previous
+##
+## `Super + A` and `Super + S` to focus the previous/next view in the layout stack
+##
+
+riverctl map normal Super A focus-view previous
+riverctl map normal Super S focus-view next
+
+
+##
+### Tail: Keybind / Window / Focus
+################################################################################
+
+
+
+
+################################################################################
+### Head: Keybind / Window / Swap
+##
+
+
+##
+## `Super + Grave` and `Super + Tab` to swap the focused view with the previous/next
+## view in the layout stack
+##
+
+riverctl map normal Super Grave swap previous
+riverctl map normal Super Tab swap next
+
+
+##
+### Tail: Keybind / Window / Swap
+################################################################################
+
+
+
+
 
 # Super+Period and Super+Comma to focus the next/previous output
 riverctl map normal Super Period focus-output next
