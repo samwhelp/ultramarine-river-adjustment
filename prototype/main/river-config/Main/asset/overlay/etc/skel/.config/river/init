@@ -189,12 +189,18 @@ riverctl map normal Super S focus-view next
 
 
 ##
-## `Super + Grave` and `Super + Tab` to swap the focused view with the previous/next
-## view in the layout stack
+## `Super + Grave` and `Super + Tab` to swap the focused view with the previous/next view in the layout stack
 ##
 
 riverctl map normal Super Grave swap previous
 riverctl map normal Super Tab swap next
+
+
+##
+## `Super + Return` to bump the focused view to the top of the layout stack
+##
+
+riverctl map normal Super Return zoom
 
 
 ##
@@ -213,8 +219,7 @@ riverctl map normal Super Comma focus-output previous
 riverctl map normal Super+Shift Period send-to-output next
 riverctl map normal Super+Shift Comma send-to-output previous
 
-# Super+Return to bump the focused view to the top of the layout stack
-riverctl map normal Super Return zoom
+
 
 # Super+H and Super+L to decrease/increase the main ratio of rivertile(1)
 riverctl map normal Super H send-layout-cmd rivertile "main-ratio -0.05"
