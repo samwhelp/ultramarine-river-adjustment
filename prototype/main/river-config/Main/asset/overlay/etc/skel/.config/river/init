@@ -192,10 +192,11 @@ riverctl map normal Super Q close
 
 
 ##
-## `Super + n` to toggle float
+## `Super + v` to toggle float
 ##
 
-riverctl map normal Super N toggle-float
+riverctl map normal Super V toggle-float
+#riverctl map normal Super N toggle-float
 
 
 ##
@@ -259,42 +260,69 @@ riverctl map normal Super Return zoom
 
 
 
-
-# Super+Period and Super+Comma to focus the next/previous output
-riverctl map normal Super Period focus-output next
-riverctl map normal Super Comma focus-output previous
-
-# Super+Shift+{Period,Comma} to send the focused view to the next/previous output
-riverctl map normal Super+Shift Period send-to-output next
-riverctl map normal Super+Shift Comma send-to-output previous
+################################################################################
+### Head: Keybind / Window / Move
+##
 
 
+##
+## `Super + {k,j,h,l}` to move views
+##
 
-# Super+H and Super+L to decrease/increase the main ratio of rivertile(1)
-riverctl map normal Super H send-layout-cmd rivertile "main-ratio -0.05"
-riverctl map normal Super L send-layout-cmd rivertile "main-ratio +0.05"
+riverctl map normal Super K move up 100
+riverctl map normal Super J move down 100
+riverctl map normal Super H move left 100
+riverctl map normal Super L move right 100
 
-# Super+Shift+H and Super+Shift+L to increment/decrement the main count of rivertile(1)
-riverctl map normal Super+Shift H send-layout-cmd rivertile "main-count +1"
-riverctl map normal Super+Shift L send-layout-cmd rivertile "main-count -1"
 
-# Super+Alt+{H,J,K,L} to move views
-riverctl map normal Super+Alt H move left 100
-riverctl map normal Super+Alt J move down 100
-riverctl map normal Super+Alt K move up 100
-riverctl map normal Super+Alt L move right 100
+##
+### Tail: Keybind / Window / Move
+################################################################################
 
-# Super+Alt+Control+{H,J,K,L} to snap views to screen edges
-riverctl map normal Super+Alt+Control H snap left
-riverctl map normal Super+Alt+Control J snap down
-riverctl map normal Super+Alt+Control K snap up
-riverctl map normal Super+Alt+Control L snap right
 
-# Super+Alt+Shift+{H,J,K,L} to resize views
-riverctl map normal Super+Alt+Shift H resize horizontal -100
-riverctl map normal Super+Alt+Shift J resize vertical 100
-riverctl map normal Super+Alt+Shift K resize vertical -100
-riverctl map normal Super+Alt+Shift L resize horizontal 100
+
+
+################################################################################
+### Head: Keybind / Window / Resize
+##
+
+
+##
+## `Super + Shift + {k,j,h,l}` to resize views
+##
+
+riverctl map normal Super+Shift K resize vertical 100
+riverctl map normal Super+Shift J resize vertical -100
+riverctl map normal Super+Shift H resize horizontal -100
+riverctl map normal Super+Shift L resize horizontal 100
+
+
+##
+### Tail: Keybind / Window / Resize
+################################################################################
+
+
+
+
+################################################################################
+### Head: Keybind / Window / Snap
+##
+
+
+##
+## Super+Control+{k,j,h,l} to snap views to screen edges
+##
+
+riverctl map normal Super+Control K snap up
+riverctl map normal Super+Control J snap down
+riverctl map normal Super+Control H snap left
+riverctl map normal Super+Control L snap right
+
+
+##
+### Tail: Keybind / Window / Move
+################################################################################
+
 
 
 
@@ -321,6 +349,62 @@ all_tags=$(((1 << 32) - 1))
 riverctl map normal Super 0 set-focused-tags $all_tags
 riverctl map normal Super+Shift 0 set-view-tags $all_tags
 
+
+
+
+
+
+
+################################################################################
+### Head: Keybind / Output / Focus
+##
+
+##
+## Super+Period and Super+Comma to focus the next/previous output
+##
+
+riverctl map normal Super Period focus-output next
+riverctl map normal Super Comma focus-output previous
+
+##
+## Super+Shift+{Period,Comma} to send the focused view to the next/previous output
+##
+
+riverctl map normal Super+Shift Period send-to-output next
+riverctl map normal Super+Shift Comma send-to-output previous
+
+
+##
+### Tail: Keybind / Output / Focus
+################################################################################
+
+
+
+
+################################################################################
+### Head: Keybind / Layout / Control
+##
+
+
+##
+## `Alt + k` and `Alt + j` to increment/decrement the main count of rivertile(1)
+##
+
+riverctl map normal Alt K send-layout-cmd rivertile "main-count +1"
+riverctl map normal Alt J send-layout-cmd rivertile "main-count -1"
+
+
+##
+## `Alt + h` and `Alt + l` to decrease/increase the main ratio of rivertile(1)
+##
+
+riverctl map normal Alt H send-layout-cmd rivertile "main-ratio -0.05"
+riverctl map normal Alt L send-layout-cmd rivertile "main-ratio +0.05"
+
+
+##
+### Tail: Keybind / Layout / Control
+################################################################################
 
 
 
