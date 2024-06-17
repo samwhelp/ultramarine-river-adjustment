@@ -79,7 +79,7 @@ riverctl map normal Alt+Control T spawn foot
 riverctl map normal Alt+Shift F spawn pcmanfm-qt
 riverctl map normal Alt+Shift G spawn thunar
 riverctl map normal Alt+Shift E spawn mousepad
-riverctl map normal Alt+Shift B spawn firefox --new-tab about:blank
+riverctl map normal Alt+Shift B spawn 'firefox --new-tab about:blank'
 
 ##
 ### Tail: Keybind / Launch Application / Favorite
@@ -92,9 +92,9 @@ riverctl map normal Alt+Shift B spawn firefox --new-tab about:blank
 ### Head: Keybind / Launch Application / Rofi
 ##
 
-riverctl map normal Alt+Shift D spawn rofi -show drun -show-icons
-riverctl map normal Alt+Shift R spawn rofi -show drun -show-icons
-riverctl map normal Alt+Shift W spawn rofi -show window -show-icons
+riverctl map normal Alt+Shift D spawn 'rofi -show drun -show-icons'
+riverctl map normal Alt+Shift R spawn 'rofi -show run -show-icons'
+riverctl map normal Alt+Shift W spawn 'rofi -show window -show-icons'
 
 ##
 ### Tail: Keybind / Launch Application / Rofi
