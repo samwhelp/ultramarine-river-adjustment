@@ -4,15 +4,31 @@
 
 
 ################################################################################
-### Head: This File Path
+### Head: Path
 ##
 
 ##
 ## ~/.config/reiver/init
 ##
 
+
 ##
-### Tail: This File Path
+## ## Link
+##
+## * https://github.com/samwhelp/ultramarine-river-adjustment/blob/main/prototype/main/river-config/Main/asset/overlay/etc/skel/.config/river/init
+## * https://github.com/samwhelp/ultramarine-river-adjustment/blob/main/prototype/main/river-config/Main/asset/overlay/etc/skel/.config/river/autostart
+##
+
+
+##
+## ## Example
+##
+## * https://github.com/riverwm/river/blob/master/example/init
+##
+
+
+##
+### Tail: Path
 ################################################################################
 
 
