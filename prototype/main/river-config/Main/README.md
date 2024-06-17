@@ -1,6 +1,6 @@
 
 
-# Sway Config
+# River Config
 
 
 
@@ -8,7 +8,7 @@
 ## Config File Path
 
 
-### Sway
+### River
 
 | Config File Path |
 | --- |
