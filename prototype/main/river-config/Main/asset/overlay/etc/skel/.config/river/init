@@ -56,6 +56,24 @@
 
 
 ################################################################################
+### Head: Appearance / Settings
+##
+
+
+# Set background and border color
+riverctl background-color 0x002b36
+riverctl border-color-focused 0x93a1a1
+riverctl border-color-unfocused 0x586e75
+
+
+##
+### Tail: Appearance / Settings
+################################################################################
+
+
+
+
+################################################################################
 ### Head: Keybind
 ##
 
@@ -419,7 +437,7 @@ riverctl map passthrough Super F11 enter-mode normal
 
 
 ##
-### Tail: Keybind / Layout / Control
+### Tail: Keybind / Mode / Control
 ################################################################################
 
 
@@ -462,67 +480,34 @@ done
 
 
 ################################################################################
-### Head: Appearance / Control
+### Head: Keybind / Screenshot
 ##
 
+riverctl map normal None Print spawn 'grimshot save screen'
 
-# Set background and border color
-riverctl background-color 0x002b36
-riverctl border-color-focused 0x93a1a1
-riverctl border-color-unfocused 0x586e75
-
+riverctl map normal Super Print spawn 'grimshot save active'
+riverctl map normal Control Print spawn 'grimshot save area'
+riverctl map normal Alt Print spawn 'grimshot save anything'
 
 ##
-### Tail: Appearance / Control
+### Tail: Keybind / Screenshot
 ################################################################################
 
 
 
 
 ################################################################################
-### Head: Rule / Control
+### Head: Layout / Settings
 ##
 
-
-##
-## Make all views with an app-id that starts with "float" and title "foo" start floating.
-##
-
-riverctl rule-add -app-id 'float*' -title 'foo' float
-
-##
-## Make all views with app-id "bar" and any title use client-side decorations
-##
-
-riverctl rule-add -app-id "bar" csd
+## Set the default layout generator to be rivertile and start it.
+## River will send the process group of the init executable SIGTERM on exit.
+riverctl default-layout rivertile
+rivertile -view-padding 6 -outer-padding 6 &
 
 
 ##
-## Make views start floating.
-##
-
-riverctl rule-add -app-id 'xfce-polkit' float
-riverctl rule-add -app-id 'org.pulseaudio.pavucontrol' float
-riverctl rule-add -app-id 'mate-volume-control' float
-riverctl rule-add -app-id 'nm-connection-editor' float
-
-
-## pcmanfm-qt
-riverctl rule-add -app-id 'pcmanfm-qt' -title 'Copy Files' float
-riverctl rule-add -app-id 'pcmanfm-qt' -title 'Confirm to replace files' float
-
-
-## thunar
-riverctl rule-add -app-id 'thunar' -title 'File Operation Progress' float
-riverctl rule-add -app-id 'thunar' -title 'Confirm to replace files' float
-
-
-## firefox
-riverctl rule-add -app-id 'org.mozilla.firefox' -title 'Picture-in-Picture' float
-
-
-##
-### Tail: Rule / Control
+### Tail: Layout / Settings
 ################################################################################
 
 
@@ -577,35 +562,51 @@ riverctl map normal Super Left  send-layout-cmd rivertile "main-location left"
 
 
 
-################################################################################
-### Head: Layout / Control
-##
-
-## Set the default layout generator to be rivertile and start it.
-## River will send the process group of the init executable SIGTERM on exit.
-riverctl default-layout rivertile
-rivertile -view-padding 6 -outer-padding 6 &
-
-
-##
-### Tail: Layout / Control
-################################################################################
-
-
-
 
 ################################################################################
-### Head: Keybind / Screenshot
+### Head: Rule / Control
 ##
 
-riverctl map normal None Print spawn 'grimshot save screen'
-
-riverctl map normal Super Print spawn 'grimshot save active'
-riverctl map normal Control Print spawn 'grimshot save area'
-riverctl map normal Alt Print spawn 'grimshot save anything'
 
 ##
-### Tail: Keybind / Screenshot
+## Make all views with an app-id that starts with "float" and title "foo" start floating.
+##
+
+riverctl rule-add -app-id 'float*' -title 'foo' float
+
+##
+## Make all views with app-id "bar" and any title use client-side decorations
+##
+
+riverctl rule-add -app-id "bar" csd
+
+
+##
+## Make views start floating.
+##
+
+riverctl rule-add -app-id 'xfce-polkit' float
+riverctl rule-add -app-id 'org.pulseaudio.pavucontrol' float
+riverctl rule-add -app-id 'mate-volume-control' float
+riverctl rule-add -app-id 'nm-connection-editor' float
+
+
+## pcmanfm-qt
+riverctl rule-add -app-id 'pcmanfm-qt' -title 'Copy Files' float
+riverctl rule-add -app-id 'pcmanfm-qt' -title 'Confirm to replace files' float
+
+
+## thunar
+riverctl rule-add -app-id 'thunar' -title 'File Operation Progress' float
+riverctl rule-add -app-id 'thunar' -title 'Confirm to replace files' float
+
+
+## firefox
+riverctl rule-add -app-id 'org.mozilla.firefox' -title 'Picture-in-Picture' float
+
+
+##
+### Tail: Rule / Control
 ################################################################################
 
 
