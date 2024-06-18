@@ -126,10 +126,17 @@ riverctl map normal Alt+Control T spawn foot
 ### Head: Keybind / Application / Favorite
 ##
 
+
 riverctl map normal Alt+Shift F spawn pcmanfm-qt
 riverctl map normal Alt+Shift G spawn thunar
 riverctl map normal Alt+Shift E spawn mousepad
 riverctl map normal Alt+Shift B spawn 'firefox --new-tab about:blank'
+
+riverctl map normal Alt+Shift V spawn pavucontrol
+#riverctl map normal Alt+Shift V spawn mate-volume-control
+
+riverctl map normal Alt+Shift N spawn nm-connection-editor
+
 
 ##
 ### Tail: Keybind / Application / Favorite
