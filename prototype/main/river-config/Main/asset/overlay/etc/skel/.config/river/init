@@ -493,6 +493,7 @@ riverctl rule-add -app-id 'float*' -title 'foo' float
 ##
 ## Make all views with app-id "bar" and any title use client-side decorations
 ##
+
 riverctl rule-add -app-id "bar" csd
 
 
@@ -504,6 +505,20 @@ riverctl rule-add -app-id 'xfce-polkit' float
 riverctl rule-add -app-id 'org.pulseaudio.pavucontrol' float
 riverctl rule-add -app-id 'mate-volume-control' float
 riverctl rule-add -app-id 'nm-connection-editor' float
+
+
+## pcmanfm-qt
+riverctl rule-add -app-id 'pcmanfm-qt' -title 'Copy Files' float
+riverctl rule-add -app-id 'pcmanfm-qt' -title 'Confirm to replace files' float
+
+
+## thunar
+riverctl rule-add -app-id 'thunar' -title 'File Operation Progress' float
+riverctl rule-add -app-id 'thunar' -title 'Confirm to replace files' float
+
+
+## firefox
+riverctl rule-add -app-id 'firefox' -title 'Picture-in-Picture' float
 
 
 ##
