@@ -30,6 +30,16 @@ hyprpaper
 
 
 ##
+## ## Package / Screenshot
+##
+
+grim
+grimshot
+
+
+
+
+##
 ## ## Package / Theme / Papirus
 ##
 

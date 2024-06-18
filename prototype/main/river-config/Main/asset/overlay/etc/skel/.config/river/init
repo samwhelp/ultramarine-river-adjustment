@@ -595,6 +595,23 @@ rivertile -view-padding 6 -outer-padding 6 &
 
 
 ################################################################################
+### Head: Keybind / Screenshot
+##
+
+riverctl map normal None Print spawn 'grimshot save screen'
+
+riverctl map normal Super Print spawn 'grimshot save active'
+riverctl map normal Control Print spawn 'grimshot save area'
+riverctl map normal Alt Print spawn 'grimshot save anything'
+
+##
+### Tail: Keybind / Screenshot
+################################################################################
+
+
+
+
+################################################################################
 ### Head: Autostart
 ##
 
