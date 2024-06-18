@@ -518,7 +518,7 @@ riverctl rule-add -app-id 'thunar' -title 'Confirm to replace files' float
 
 
 ## firefox
-riverctl rule-add -app-id 'firefox' -title 'Picture-in-Picture' float
+riverctl rule-add -app-id 'org.mozilla.firefox' -title 'Picture-in-Picture' float
 
 
 ##
