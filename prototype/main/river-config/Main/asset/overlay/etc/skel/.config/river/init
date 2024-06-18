@@ -484,11 +484,26 @@ riverctl border-color-unfocused 0x586e75
 ##
 
 
-# Make all views with an app-id that starts with "float" and title "foo" start floating.
+##
+## Make all views with an app-id that starts with "float" and title "foo" start floating.
+##
+
 riverctl rule-add -app-id 'float*' -title 'foo' float
 
-# Make all views with app-id "bar" and any title use client-side decorations
+##
+## Make all views with app-id "bar" and any title use client-side decorations
+##
 riverctl rule-add -app-id "bar" csd
+
+
+##
+## Make views start floating.
+##
+
+riverctl rule-add -app-id 'xfce-polkit' float
+riverctl rule-add -app-id 'org.pulseaudio.pavucontrol' float
+riverctl rule-add -app-id 'mate-volume-control' float
+riverctl rule-add -app-id 'nm-connection-editor' float
 
 
 ##
