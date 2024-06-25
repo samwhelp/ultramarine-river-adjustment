@@ -21,7 +21,7 @@
 
 | Adjustment |
 | -------- |
-| [Ultramarine River](https://github.com/samwhelp/ultramarine-river-adjustment/tree/main/prototype/main/river-config/Main) |
+| [Ultramarine River Config](https://github.com/samwhelp/ultramarine-river-adjustment/tree/main/prototype/main/river-config/Main) |
 
 
 
