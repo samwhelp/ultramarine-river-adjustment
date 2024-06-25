@@ -79,14 +79,10 @@
 
 | Fedora Package |
 | --- |
-| [wayfire](https://packages.fedoraproject.org/pkgs/wayfire/wayfire/) |
+| [river](https://packages.fedoraproject.org/pkgs/river/river/) |
+| [hyprpaper](https://packages.fedoraproject.org/pkgs/hyprpaper/hyprpaper/) |
 | [wf-shell](https://packages.fedoraproject.org/pkgs/wf-shell/wf-shell/) |
 | [wlogout](https://packages.fedoraproject.org/pkgs/wlogout/wlogout/) |
-
-
-## Manual
-
-* [labwc-config](https://labwc.github.io/labwc-config.5.html)
 
 
 
