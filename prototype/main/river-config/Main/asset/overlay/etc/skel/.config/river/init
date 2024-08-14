@@ -154,7 +154,7 @@ riverctl map normal Alt+Shift V spawn pavucontrol-qt
 #riverctl map normal Alt+Shift V spawn pavucontrol
 #riverctl map normal Alt+Shift V spawn mate-volume-control
 
-riverctl map normal Alt+Shift N spawn 'kitty --class 'nmtui' --title 'Network Settings' nmtui'
+riverctl map normal Alt+Shift N spawn "kitty --class 'nmtui' --title 'Network Settings' nmtui"
 
 
 ##
@@ -588,6 +588,7 @@ riverctl rule-add -app-id "bar" csd
 
 riverctl rule-add -app-id 'xfce-polkit' float
 riverctl rule-add -app-id 'org.pulseaudio.pavucontrol' float
+riverctl rule-add -app-id 'pavucontrol-qt' float
 riverctl rule-add -app-id 'mate-volume-control' float
 riverctl rule-add -app-id 'nm-connection-editor' float
 
